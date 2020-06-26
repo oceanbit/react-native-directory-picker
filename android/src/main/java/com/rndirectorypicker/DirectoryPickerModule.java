@@ -1,19 +1,17 @@
 package com.rndirectorypicker;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Build;
+import android.provider.DocumentsContract;
 import android.util.Log;
 
-import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Promise;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.uimanager.IllegalViewOperationException;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -49,7 +47,6 @@ public class DirectoryPickerModule extends ReactContextBaseJavaModule {
         this.onDone = onDone;
     }
 
-
     private class ActivityEventListener implements com.facebook.react.bridge.ActivityEventListener {
 
         @Override
@@ -57,14 +54,18 @@ public class DirectoryPickerModule extends ReactContextBaseJavaModule {
            this.onActivityResult(requestCode, resultCode, data);
         }
 
+        @TargetApi(Build.VERSION_CODES.LOLLIPOP)
         public void onActivityResult(int requestCode, int resultCode, Intent data) {
             Log.i("MYTAG", String.format("requestCode %s", requestCode));
             Log.i("MYTAG", String.format("resultCode %s", resultCode));
 
             if(resultCode == RESULT_OK && requestCode == RQS_OPEN_DOCUMENT_TREE){
                 Uri uriTree = data.getData();
+                Uri docUriTree = DocumentsContract.buildDocumentUriUsingTree(uriTree, DocumentsContract.getTreeDocumentId(uriTree));
 
-                Log.i("MYTAG", String.format("uriTree %s", uriTree.toString()));
+                Log.i("MYTAG", String.format("docUriTree %s", docUriTree));
+
+                onDone.invoke(docUriTree.toString());
             }
         }
 
