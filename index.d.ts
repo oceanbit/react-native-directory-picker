@@ -1,7 +1,5 @@
-declare module "react-native-immersive-bars" {
-    export function changeBarColors(
-        isDarkMode: boolean,
-        translucentLightStr?: string,
-        translucentDarkStr?: string
+declare module "react-native-directory-picker" {
+    export function selectDirectory(
+        onDone: () => {},
     ): void;
 }

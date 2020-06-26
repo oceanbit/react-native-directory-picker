@@ -1,13 +1,9 @@
 import { NativeModules } from "react-native";
 
-const { ImmersiveBars } = NativeModules;
+const { DirectoryPicker } = NativeModules;
 
-const changeBarColors = (
-    isDarkMode = false,
-    translucentLightStr = "",
-    translucentDarkStr = "",
-) => {
-    ImmersiveBars.changeBarColors(isDarkMode, translucentLightStr, translucentDarkStr);
+const selectDirectory = (onDone) => {
+    DirectoryPicker.selectDirectory(onDone);
 };
 
-export { changeBarColors };
+export { selectDirectory };

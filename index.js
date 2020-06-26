@@ -1,3 +1,3 @@
-const changeBarColors = () => {};
+const selectDirectory = () => {};
 
-export { changeBarColors };
+export { selectDirectory };
