@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1528B86E69E6E1BD29E4FA1E /* Pods_RNDirectoryPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5D01A68A9913588E9B94AA /* Pods_RNDirectoryPicker.framework */; };
-		975C04E424D0EB5E004F2BB7 /* RNDirectoryPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 975C04E224D0EB5E004F2BB7 /* RNDirectoryPicker.m */; };
 		975C04E524D0EB5E004F2BB7 /* RNDirectoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975C04E324D0EB5E004F2BB7 /* RNDirectoryPicker.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RNDirectoryPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNDirectoryPicker.m */; };
 /* End PBXBuildFile section */
@@ -186,7 +185,6 @@
 		134814201AA4EA6300B7C361 /* libRNDirectoryPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDirectoryPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5D01A68A9913588E9B94AA /* Pods_RNDirectoryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNDirectoryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA737E0FFBB40D2ECF9C736 /* Pods-RNDirectoryPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDirectoryPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNDirectoryPicker/Pods-RNDirectoryPicker.release.xcconfig"; sourceTree = "<group>"; };
-		975C04E224D0EB5E004F2BB7 /* RNDirectoryPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDirectoryPicker.m; sourceTree = "<group>"; };
 		975C04E324D0EB5E004F2BB7 /* RNDirectoryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNDirectoryPicker.swift; sourceTree = "<group>"; };
 		975C04E624D0EC52004F2BB7 /* RNDirectoryPicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNDirectoryPicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		A73D196C67F67BCCD9F439C8 /* Pods-RNDirectoryPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNDirectoryPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNDirectoryPicker/Pods-RNDirectoryPicker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				B3E7B5891CC2AC0600A0062D /* RNDirectoryPicker.m */,
-				975C04E224D0EB5E004F2BB7 /* RNDirectoryPicker.m */,
 				975C04E324D0EB5E004F2BB7 /* RNDirectoryPicker.swift */,
 				975C04E624D0EC52004F2BB7 /* RNDirectoryPicker-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -519,7 +516,6 @@
 			files = (
 				975C04E524D0EB5E004F2BB7 /* RNDirectoryPicker.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNDirectoryPicker.m in Sources */,
-				975C04E424D0EB5E004F2BB7 /* RNDirectoryPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
