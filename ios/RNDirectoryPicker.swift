@@ -1,11 +1,3 @@
-//
-//  DirectoryPicker.swift
-//  GitShark
-//
-//  Created by Corbin Crutchley on 6/27/20.
-//  Copyright © 2020 OceanBit. All rights reserved.
-//
-
 import UIKit
 import MobileCoreServices
 
@@ -34,7 +26,7 @@ class DirectoryPicker: NSObject, UIDocumentPickerDelegate {
       self.topMostViewController()?.present(documentPicker, animated: true, completion: nil)
     }
   }
-   
+
   @objc
   fileprivate func topMostViewController() -> UIViewController? {
        var ret: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
@@ -47,7 +39,7 @@ class DirectoryPicker: NSObject, UIDocumentPickerDelegate {
        } while(true)
        return ret
    }
-  
+
   @objc
   static func requiresMainQueueSetup() -> Bool {
     return true
