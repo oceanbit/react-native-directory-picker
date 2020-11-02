@@ -28,5 +28,7 @@ import {selectDirectory} from 'react-native-immersive-bars';
 
 // ...
 
-selectDirectory((path) => console.log(`The path is ${path}`));
+selectDirectory().then((path) => {
+  console.log(`The path is ${path}`);
+});
 ```
