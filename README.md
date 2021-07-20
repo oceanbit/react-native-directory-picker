@@ -24,7 +24,7 @@ yarn add react-native-directory-picker
 ### Usage in JavaScript
 
 ```jsx
-import {selectDirectory} from 'react-native-immersive-bars';
+import {selectDirectory} from 'react-native-directory-picker';
 
 // ...
 
